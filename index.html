@@ -563,6 +563,7 @@
   
     xhr.onreadystatechange = function(){
       if(xhr.readyState !== 4) return;
+      alert('STATUS: ' + xhr.status + '\nRESPUESTA: ' + xhr.responseText.substring(0,300));
   
       var list = document.getElementById('agenda-list');
       var c = window._colors || THEMES.green;
